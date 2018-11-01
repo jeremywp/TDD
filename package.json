@@ -1,0 +1,14 @@
+{
+  "name": "golf-scorecard",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "jasmine": "^3.3.0"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "spec_dir": "spec",
+  "spec_files": [
+    "../../../js/scoring-service.js",
+    "**/*[sS]pec.js"
+  ],
+  "helpers": [
+    "helpers/**/*.js"
+  ],
+  "stopSpecOnExpectationFailure": false,
+  "random": true
+}

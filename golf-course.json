@@ -1,0 +1,284 @@
+{
+  "course": {
+    "id": 11819,
+    "status": "active",
+    "membership_type": "public",
+    "practice_area_id": 1379,
+    "measurement_type": "yards",
+    "hole_count": 18,
+    "local_rank": 9,
+    "local_max_rank": 45,
+    "global_rank": 141,
+    "global_max_rank": 31097,
+    "name": "Thanksgiving Point",
+    "addr_1": "599 N Frontage Rd",
+    "city": "Lehi",
+    "state_or_province": "UT",
+    "country": "United States",
+    "zip_code": "84043-3506",
+    "phone": "(801)768-4955",
+    "website": "http://www.thanksgivingpoint.org/visit/golf",
+    "inserted": "2009-07-27T23:55:06+00:00",
+    "updated": "2015-05-01T13:34:57+00:00",
+    "holes": [
+      {
+        "hole_num": 1,
+        "id": 24568,
+        "course_id": 11819,
+        "green_location": {
+          "lat": 40.431459252532,
+          "lng": -111.905075311661
+        },
+        "pin_location": {},
+        "tee_boxes": [
+          {
+            "id": 18030173,
+            "course_hole_id": 24568,
+            "tee_type": "pro",
+            "tee_color_type": "black",
+            "par": 4,
+            "yards": 363,
+            "meters": 331,
+            "hcp": 11,
+            "tee_hex_color": "#443C30",
+            "location": {
+              "lat": 40.4295033232823,
+              "lng": -111.902114152909
+            }
+          },
+          {
+            "id": 18030172,
+            "course_hole_id": 24568,
+            "tee_type": "champion",
+            "tee_color_type": "blue",
+            "par": 4,
+            "yards": 345,
+            "meters": 315,
+            "hcp": 11,
+            "tee_hex_color": "#6e869e",
+            "location": {
+              "lat": 40.4296911602932,
+              "lng": -111.902199983597
+            }
+          },
+          {
+            "id": 18030171,
+            "course_hole_id": 24568,
+            "tee_type": "men",
+            "tee_color_type": "white",
+            "par": 4,
+            "yards": 345,
+            "meters": 315,
+            "hcp": 11,
+            "tee_hex_color": "#ffffff",
+            "location": {
+              "lat": 40.4299198307289,
+              "lng": -111.902468204499
+            }
+          },
+          {
+            "id": 18030170,
+            "course_hole_id": 24568,
+            "tee_type": "women",
+            "tee_color_type": "red",
+            "par": 4,
+            "yards": 345,
+            "meters": 315,
+            "hcp": 11,
+            "tee_hex_color": "#ff0000",
+            "location": {
+              "lat": 40.4301566671461,
+              "lng": -111.902704238892
+            }
+          },
+          {
+            "id": 18030174,
+            "course_hole_id": 24568,
+            "tee_type": "auto change location",
+            "par": 4,
+            "yards": 345,
+            "meters": 315,
+            "hcp": 11,
+            "location": {
+              "lat": 40.4295033232823,
+              "lng": -111.902993917466
+            }
+          }
+        ],
+        "links": {}
+      },
+      {
+        "hole_num": 18,
+        "id": 24607,
+        "course_id": 11819,
+        "green_location": {
+          "lat": 40.4289071414682,
+          "lng": -111.903374791145
+        },
+        "pin_location": {},
+        "tee_boxes": [
+          {
+            "id": 18030258,
+            "course_hole_id": 24607,
+            "tee_type": "pro",
+            "tee_color_type": "black",
+            "par": 4,
+            "yards": 357,
+            "meters": 326,
+            "hcp": 10,
+            "tee_hex_color": "#443C30",
+            "location": {
+              "lat": 40.4286784675891,
+              "lng": -111.907226443291
+            }
+          },
+          {
+            "id": 18030257,
+            "course_hole_id": 24607,
+            "tee_type": "champion",
+            "tee_color_type": "blue",
+            "par": 4,
+            "yards": 337,
+            "meters": 308,
+            "hcp": 10,
+            "tee_hex_color": "#6e869e",
+            "location": {
+              "lat": 40.4287968880878,
+              "lng": -111.907022595406
+            }
+          },
+          {
+            "id": 18030256,
+            "course_hole_id": 24607,
+            "tee_type": "men",
+            "tee_color_type": "white",
+            "par": 4,
+            "yards": 329,
+            "meters": 300,
+            "hcp": 10,
+            "tee_hex_color": "#ffffff",
+            "location": {
+              "lat": 40.4289704349937,
+              "lng": -111.9069314003
+            }
+          },
+          {
+            "id": 18030255,
+            "course_hole_id": 24607,
+            "tee_type": "women",
+            "tee_color_type": "red",
+            "par": 4,
+            "yards": 309,
+            "meters": 282,
+            "hcp": 12,
+            "tee_hex_color": "#ff0000",
+            "location": {
+              "lat": 40.4290949801442,
+              "lng": -111.90671145916
+            }
+          },
+          {
+            "id": 18030259,
+            "course_hole_id": 24607,
+            "tee_type": "auto change location",
+            "par": 4,
+            "yards": 328,
+            "meters": 299,
+            "hcp": 10,
+            "location": {
+              "lat": 40.4288540565298,
+              "lng": -111.906917989254
+            }
+          }
+        ],
+        "links": {}
+      }
+    ],
+    "tee_types": [
+      {
+        "id": 1108562,
+        "course_id": 11819,
+        "tee_type": "pro",
+        "tee_color_type": "black",
+        "par": 72,
+        "yards": 6979,
+        "meters": 6371,
+        "rating": 76.2,
+        "slope": 140,
+        "front_nine_par": 36,
+        "front_nine_yards": 3439,
+        "front_nine_meters": 3138,
+        "back_nine_par": 36,
+        "back_nine_yards": 3540,
+        "back_nine_meters": 3233,
+        "tee_hex_color": "#443C30"
+      },
+      {
+        "id": 1108561,
+        "course_id": 11819,
+        "tee_type": "men",
+        "tee_color_type": "white",
+        "par": 72,
+        "yards": 6200,
+        "meters": 5659,
+        "rating": 69.7,
+        "slope": 125,
+        "front_nine_par": 36,
+        "front_nine_yards": 3053,
+        "front_nine_meters": 2787,
+        "back_nine_par": 36,
+        "back_nine_yards": 3147,
+        "back_nine_meters": 2872,
+        "tee_hex_color": "#ffffff"
+      },
+      {
+        "id": 1108560,
+        "course_id": 11819,
+        "tee_type": "women",
+        "tee_color_type": "red",
+        "par": 72,
+        "yards": 5791,
+        "meters": 5287,
+        "rating": 72.8,
+        "slope": 135,
+        "front_nine_par": 36,
+        "front_nine_yards": 2867,
+        "front_nine_meters": 2617,
+        "back_nine_par": 36,
+        "back_nine_yards": 2924,
+        "back_nine_meters": 2670,
+        "tee_hex_color": "#ff0000"
+      },
+      {
+        "id": 1108559,
+        "course_id": 11819,
+        "tee_type": "champion",
+        "tee_color_type": "blue",
+        "par": 72,
+        "yards": 6559,
+        "meters": 5988,
+        "rating": 71.7,
+        "slope": 129,
+        "front_nine_par": 36,
+        "front_nine_yards": 3234,
+        "front_nine_meters": 2952,
+        "front_nine_rating": 35.8,
+        "front_nine_slope": 129,
+        "back_nine_par": 36,
+        "back_nine_yards": 3325,
+        "back_nine_meters": 3036,
+        "back_nine_rating": 35.8,
+        "back_nine_slope": 129,
+        "tee_hex_color": "#6e869e"
+      }
+    ],
+    "location": {
+      "lat": 40.4295033232823,
+      "lng": -111.902993917466
+    },
+    "extras": [],
+    "links": {},
+    "href": "https://api.swingbyswing.com/v2/courses/11819?access_token=a4566c8e-7c42-402c-a948-68cc705d9022",
+    "type": "course"
+  }
+}
