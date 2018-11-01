@@ -77,7 +77,7 @@ describe('ScoringService', () => {
                playerInScores[i] = playerScores[i+9]
            }
            let scoreRelativeToInPar = scoringService.calculateScoreRelativeToInPar(inPar, playerInScores);
-           expect(scoreRelativeToInPar).toEqual(-9);
+           expect(scoreRelativeToInPar).toEqual(-36);
        });
        it('calculates in-score relative to par correctly when score is over par', () => {
            let inPar = 36;
@@ -87,7 +87,7 @@ describe('ScoringService', () => {
                playerInScores[i] = playerScores[i-9]
            }
            let scoreRelativeToPar = scoringService.calculateScoreRelativeToPar(inPar, playerInScores);
-           expect(scoreRelativeToPar).toEqual(9);
+           expect(scoreRelativeToPar).toEqual(-36);
        });
    });
    describe('calculateTotalScore', () => {
