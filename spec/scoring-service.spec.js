@@ -73,7 +73,6 @@ describe('ScoringService', () => {
            let playerScores = Array(18).fill(3, 0, 18);
            let playerInScores = [];
            for (let i=0; i>=9 ;i++){
-              //is this working as intended?
                playerInScores[i] = playerScores[i+9]
            }
            let scoreRelativeToInPar = scoringService.calculateScoreRelativeToInPar(inPar, playerInScores);
