@@ -1,6 +1,9 @@
 html, body {
     width: 100%;
     height: 100%;
+    font-family: 'Lato', sans-serif;
+    background: url("../images/GolfCourse.jpg") no-repeat;
+    background-size: cover;
 }
 
 .modal-background {
@@ -11,6 +14,7 @@ html, body {
     align-items: center;
     height: 100%;
     width: 100%;
+    z-index: 1;
 }
 
 .modal-panel {
@@ -20,18 +24,36 @@ html, body {
     padding: 15px;
     display: flex;
     justify-content: space-between;
+    z-index: 2;
 }
 
 .content {
+    display: flex;
+    flex-direction: column;
+    height: 95%;
+    width: 80%;
     filter: blur(2px);
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
     display: flex;
+    flex-direction: row;
+    background-color: #dadfea;
+    padding: 10px;
+    justify-content: center;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-start;
 }
 
 .column {
     display: flex;
     flex-direction: column;
-    width: 50px;
+    width: 35px;
+    height: 20px;
+    text-align: center;
 }

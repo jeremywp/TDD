@@ -3,23 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Four!</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/main.js" type="text/javascript" defer></script>
 </head>
 <body>
-    <select id="courseSelect" onchange="loadCourse(this.value)">
 
-    </select>
-    <select id="teeselect" onchange="chooseTee(this.value)">
-
-    </select>
-
-    <div class="card">
-
-    </div>
-
-    <!--<div class="modal-background">
+    <div class="modal-background">
         <div class="modal-panel">
             <label for="numberOfPlayers">Number of Players</label>
             <input id="numberOfPlayers" type="number" placeholder="4, etc.">
@@ -27,7 +19,22 @@
         </div>
     </div>
     <div class="content">
-        <div>Bacon ipsum</div>
-    </div>-->
+        <div>
+            <select id="courseSelect" onchange="loadCourse(this.value)">
+
+            </select>
+            <select id="teeselect" onchange="chooseTee(this.value)">
+
+            </select>
+        </div>
+        <div class="card">
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+        <div class="player">
+            <input class="pname" type="text" placeholder="Chandragupta">
+            <button>Add Player</button>
+        </div>
+    </div>
 </body>
 </html>

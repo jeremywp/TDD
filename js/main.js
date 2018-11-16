@@ -1,8 +1,8 @@
 let courseList;
-let numplayers = 5;
 let numholes = 18;
+let globaltee;
 
-(function(){
+(function() {
     onDocumentLoad();
 })();
 
@@ -36,33 +36,60 @@ function loadCourse(courseid) {
                 $("#teeselect").append("<option value='" + i + "'>" + teearray[i].teeType + "</option>")
             }
 
-            buildCard();
         }
     };
     xhttp.open("GET", "https://golf-courses-api.herokuapp.com/courses/"+courseid, true);
     xhttp.send();
 }
 
-function buildCard(){
-    for(let i = 1; i <= numholes; i++){
-        $(".card").append("<div id='column" + i + "' class='column'>"+ i +"</div>");
+function chooseTee(teevalue) {
+    globaltee = teevalue;
+
+    buildCard();
+}
+
+function buildCard() {
+    for(let i = 0; i < numholes; i++) {
+        $(".right").append("<div id='column" + i + "' class='column'>" +
+            "<span>"+ (i+1) +"</span>" +
+            "<div>" + mycourse.data.holes[i].teeBoxes[globaltee].yards + "</div>" +
+            "<div>" + mycourse.data.holes[i].teeBoxes[globaltee].hcp + "</div>" +
+            "<div>" + mycourse.data.holes[i].teeBoxes[globaltee].par + "</div>" +
+            "</div>");
     }
     addHoles();
 }
 
-function addHoles(){
-    for(let p = 1; p <= numplayers ; p++){
-        for (let h = 1; h <= numholes; h++){
-            $("#column" + h).append("<input type='number' id='p"+ p +"h"+ h +"'>");
+function addHoles() {
+    for(let p = 1; p <= $("#numberOfPlayers").val(); p++) {
+        for (let h = 0; h < numholes; h++) {
+            $("#column" + h).append("<input type='number' id='p"+ p +"h"+ (h+1) +"'>");
         }
     }
 }
 
+function addScore(myid) {
+    let myscore = 0;
+    //parse the player number out of the id, make that p
+    for(let i = 0; i <= numholes; i++) {
+        let scoreitem = $("#p" + p + "h" + i).val();
+        myscore += scoreitem;
+    }
+    return myscore;
+}
+
 addPlayers = () => {
     let totalPlayers = $("#numberOfPlayers").val();
-    for(let i = 1; i <= totalPlayers; i++){
-        $(".content").append("<div class='player'>Player"+ i +
-            "<button class='playerDelete'>Delete player</button>" +
+
+    $(".left").append("<div>Hole # </div>" +
+        "<div>Yards </div>" +
+        "<div>Handicap </div>" +
+        "<div>Par</div>");
+    for(let i = 1; i <= totalPlayers; i++) {
+        $(".left").append("<div class='player'>Player "+ i +
+                "<button class='playerDelete'>" +
+                    "<i class=\"far fa-trash-alt\"></i>" +
+                "</button>" +
             "</div>");
     }
     $(".modal-background").hide();
@@ -72,3 +99,16 @@ addPlayers = () => {
         $(".this").closest().remove();
     });
 };
+
+
+function checkname (myval) {
+    $(".pname").each(function (){
+        let player = $(this).html();
+        if(myval === player){
+            $(".perror").html("Sorry, that name is in use.");
+        }
+        else if(myval !== player){
+            $(".perror").html("Great name!");
+        }
+    });
+}
