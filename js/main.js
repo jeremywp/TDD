@@ -192,7 +192,7 @@ $(document).on("change", ".inscoreplayer1", function () {
 
 $(document).on("change", ".outscoreplayer1", function () {
 
-    let sumtotal = $("#totalout1").val() + $("#totalin1").val();
+    let sumtotal = parseInt($("#totalout1").val()) + parseInt($("#totalin1").val());
 
     $("#total1").val(sumtotal);
 
@@ -230,7 +230,7 @@ $(document).on("change", ".inscoreplayer2", function () {
 
 $(document).on("change", ".outscoreplayer2", function () {
 
-    let sumtotal = $("#totalout2").val() + $("#totalin2").val();
+    let sumtotal = parseInt($("#totalout2").val()) + parseInt($("#totalin2").val());
 
     $("#total2").val(sumtotal);
 
@@ -268,7 +268,7 @@ $(document).on("change", ".inscoreplayer3", function () {
 
 $(document).on("change", ".outscoreplayer3", function () {
 
-    let sumtotal = $("#totalout3").val() + $("#totalin3").val();
+    let sumtotal = parseInt($("#totalout3").val()) + parseInt($("#totalin3").val());
 
     $("#total3").val(sumtotal);
 
@@ -305,7 +305,7 @@ $(document).on("change", ".inscoreplayer4", function () {
 
 $(document).on("change", ".outscoreplayer4", function () {
 
-    let sumtotal = $("#totalout4").val() + $("#totalin4").val();
+    let sumtotal = parseInt($("#totalout4").val()) + parseInt($("#totalin4").val());
 
     $("#total4").val(sumtotal);
 
