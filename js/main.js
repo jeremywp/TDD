@@ -3,6 +3,10 @@ let numholes = 18;
 let globaltee;
 let numplayers = 0;
 let playernames = [];
+let player1total = 0;
+let player2total = 0;
+let player3total = 0;
+let player4total = 0;
 
 (function() {
     onDocumentLoad();
@@ -191,6 +195,9 @@ $(document).on("change", ".outscoreplayer1", function () {
     let sumtotal = $("#totalout1").val() + $("#totalin1").val();
 
     $("#total1").val(sumtotal);
+
+    player1total = sumtotal;
+    return player1total;
 });
 
 $(document).on("change", ".inscoreplayer1", function () {
@@ -198,6 +205,9 @@ $(document).on("change", ".inscoreplayer1", function () {
     let sumtotal = parseInt($("#totalout1").val()) + parseInt($("#totalin1").val());
 
     $("#total1").val(sumtotal);
+
+    player1total = sumtotal;
+    return player1total;
 });
 
 
@@ -223,6 +233,9 @@ $(document).on("change", ".outscoreplayer2", function () {
     let sumtotal = $("#totalout2").val() + $("#totalin2").val();
 
     $("#total2").val(sumtotal);
+
+    player2total = sumtotal;
+    return player2total;
 });
 
 $(document).on("change", ".inscoreplayer2", function () {
@@ -230,6 +243,9 @@ $(document).on("change", ".inscoreplayer2", function () {
     let sumtotal = parseInt($("#totalout2").val()) + parseInt($("#totalin2").val());
 
     $("#total2").val(sumtotal);
+
+    player2total = sumtotal;
+    return player2total;
 });
 
 
@@ -255,6 +271,9 @@ $(document).on("change", ".outscoreplayer3", function () {
     let sumtotal = $("#totalout3").val() + $("#totalin3").val();
 
     $("#total3").val(sumtotal);
+
+    player3total = sumtotal;
+    return player3total;
 });
 
 $(document).on("change", ".inscoreplayer3", function () {
@@ -262,6 +281,9 @@ $(document).on("change", ".inscoreplayer3", function () {
     let sumtotal = parseInt($("#totalout3").val()) + parseInt($("#totalin3").val());
 
     $("#total3").val(sumtotal);
+
+    player3total = sumtotal;
+    return player3total;
 });
 
 
@@ -286,6 +308,9 @@ $(document).on("change", ".outscoreplayer4", function () {
     let sumtotal = $("#totalout4").val() + $("#totalin4").val();
 
     $("#total4").val(sumtotal);
+
+    player4total = sumtotal;
+    return player4total;
 });
 
 $(document).on("change", ".inscoreplayer4", function () {
@@ -293,6 +318,9 @@ $(document).on("change", ".inscoreplayer4", function () {
     let sumtotal = parseInt($("#totalout4").val()) + parseInt($("#totalin4").val());
 
     $("#total4").val(sumtotal);
+
+    player4total = sumtotal;
+    return player4total;
 });
 
 $(document).on("change", "#p1h18", function () {
@@ -346,7 +374,9 @@ $(document).on("change", "#p3h18", function () {
 $(document).on("change", "#p4h18", function () {
     let totalscore = $("#total1").text();
     let totalpar = $("#totalpar").text();
-    let totaldif = totalscore.match(/\d+/g) - totalpar.match(/\d+/g);
+    let tscorenum = totalscore.match(/\d+/g);
+    let tparnum = totalpar.match(/\d+/g);
+    let totaldif = tscorenum - tparnum;
 
     if (totaldif > 0){
         alert("You're score was \+" + totaldif + " over par.  Better luck next time!");
