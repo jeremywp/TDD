@@ -134,15 +134,15 @@ function addHoles() {
             $("#column" + h).append("<input class='outscoreplayer"+ p +"' type='number' id='p"+ p +"h"+ (h+1) +"'>");
         }
 
-        $("#outcolumn").append("<input class='scoreplayer' id='totalout"+ p +"' type='number' readonly>");
+        $("#outcolumn").append("<input class='scoreplayer' id='totalout"+ p +"' type='number' value='0' readonly>");
 
         for (let h = 10; h < 18; h++) {
             $("#column" + h).append("<input class='inscoreplayer"+ p +"' type='number' id='p"+ p +"h"+ (h+1) +"'>");
         }
 
-        $("#incolumn").append("<input class='scoreplayer' id='totalin"+ p +"' type='number' readonly>");
+        $("#incolumn").append("<input class='scoreplayer' id='totalin"+ p +"' type='number' value='0' readonly>");
 
-        $("#totalcolumn").append("<input class='scoreplayer' id='total"+ p +"' type='number' readonly>");
+        $("#totalcolumn").append("<input class='scoreplayer' id='total"+ p +"' type='number' value='0' readonly>");
     }
 
 function addPlayer() {
@@ -324,8 +324,7 @@ $(document).on("change", ".inscoreplayer4", function () {
 });
 
 $(document).on("change", "#p1h18", function () {
-    let totalpar = $("#totalpar").text();
-    let totaldif = player1total - totalpar.match(/\d+/g);
+    let totaldif = player1total - parseInt($("#totalpar").text());
 
     if (totaldif > 0){
         alert("You're score was \+" + totaldif + " over par.  Better luck next time!");
@@ -339,8 +338,7 @@ $(document).on("change", "#p1h18", function () {
 });
 
 $(document).on("change", "#p2h18", function () {
-    let totalpar = $("#totalpar").text();
-    let totaldif = player2total - totalpar.match(/\d+/g);
+    let totaldif = player2total - parseInt($("#totalpar").text());
 
     if (totaldif > 0){
         alert("You're score was \+" + totaldif + " over par.  Better luck next time!");
@@ -354,8 +352,7 @@ $(document).on("change", "#p2h18", function () {
 });
 
 $(document).on("change", "#p3h18", function () {
-    let totalpar = $("#totalpar").text();
-    let totaldif = player3total - totalpar.match(/\d+/g);
+    let totaldif = player3total - parseInt($("#totalpar").text());
 
     if (totaldif > 0){
         alert("You're score was \+" + totaldif + " over par.  Better luck next time!");
@@ -369,8 +366,7 @@ $(document).on("change", "#p3h18", function () {
 });
 
 $(document).on("change", "#p4h18", function () {
-    let totalpar = $("#totalpar").text();
-    let totaldif = player4total - totalpar.match(/\d+/g);
+    let totaldif = player4total - parseInt($("#totalpar").text());
 
     if (totaldif > 0){
         alert("You're score was \+" + totaldif + " over par.  Better luck next time!");
