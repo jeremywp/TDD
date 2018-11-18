@@ -304,7 +304,7 @@ $(document).on("change", "#p1h18", function () {
         alert("You're score was \+" + totaldif + " over par.  Better luck next time!");
     }
     else if (totaldif < 0) {
-        alert("You're score was " + totaldif + " over par.  Great job!");
+        alert("You're score was " + totaldif + " under par.  Great job!");
     }
     else {
         alert("You score was on par.  Not bad!");
@@ -320,7 +320,7 @@ $(document).on("change", "#p2h18", function () {
         alert("You're score was \+" + totaldif + " over par.  Better luck next time!");
     }
     else if (totaldif < 0) {
-        alert("You're score was " + totaldif + " over par.  Great job!");
+        alert("You're score was " + totaldif + " under par.  Great job!");
     }
     else {
         alert("You score was on par.  Not bad!");
@@ -336,7 +336,7 @@ $(document).on("change", "#p3h18", function () {
         alert("You're score was \+" + totaldif + " over par.  Better luck next time!");
     }
     else if (totaldif < 0) {
-        alert("You're score was " + totaldif + " over par.  Great job!");
+        alert("You're score was " + totaldif + " under par.  Great job!");
     }
     else {
         alert("You score was on par.  Not bad!");
@@ -352,7 +352,7 @@ $(document).on("change", "#p4h18", function () {
         alert("You're score was \+" + totaldif + " over par.  Better luck next time!");
     }
     else if (totaldif < 0) {
-        alert("You're score was " + totaldif + " over par.  Great job!");
+        alert("You're score was " + totaldif + " under par.  Great job!");
     }
     else {
         alert("You score was on par.  Not bad!");
