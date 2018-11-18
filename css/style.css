@@ -1,9 +1,22 @@
 html, body {
     width: 100%;
     height: 100%;
+    padding: 0 auto;
+    margin: 0 auto;
     font-family: 'Lato', sans-serif;
     background: url("../images/GolfCourse.jpg") no-repeat;
     background-size: cover;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type='number'] {
+    width: 30px;
+    text-align: center;
 }
 
 .modal-background {
@@ -14,24 +27,37 @@ html, body {
     align-items: center;
     height: 100%;
     width: 100%;
+    padding: 0 auto;
+    margin: 0 auto;
     z-index: 1;
 }
 
 .modal-panel {
     background-color: #ffffff;
     border-radius: 4px;
-    width: 300px;
+    width: 350px;
     padding: 15px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     z-index: 2;
 }
 
+.selector {
+    margin: 5px;
+}
+
+.build {
+    padding: 3px;
+    margin: 5px;
+}
+
 .content {
-    display: flex;
+    display: none;
     flex-direction: column;
     height: 95%;
     width: 80%;
+    margin: 0 auto;
     filter: blur(2px);
     justify-content: center;
     align-items: center;
@@ -45,9 +71,15 @@ html, body {
     justify-content: center;
 }
 
-.right {
+.left {
+    padding: 3px;
+}
+
+.out, .in, .total{
+    padding: 3px;
     display: flex;
     justify-content: flex-start;
+    flex-direction: row;
 }
 
 .column {
@@ -55,5 +87,56 @@ html, body {
     flex-direction: column;
     width: 35px;
     height: 20px;
+    align-items: center;
     text-align: center;
+}
+
+#outcolumn, #incolumn {
+    padding: 0 8px;
+    margin-right: 10px;
+}
+
+#totalcolumn {
+    padding: 0 5px;
+    margin-right: 8px;
+}
+
+.row-title {
+    margin: 3px;
+}
+
+.row-data {
+    margin: 3px;
+}
+
+.par{
+    margin-bottom: 6px;
+}
+
+.playeradd {
+    margin-top: 5px;
+}
+
+.player {
+    display: flex;
+    justify-content: space-between;
+}
+
+.playername {
+    margin: 2px 5px 0 3px;
+}
+
+.pname {
+    margin-right: 3px;
+}
+
+.perror-box {
+    display: none;
+    margin-top: 7px;
+}
+
+.perror {
+    color: red;
+    padding: 3px 5px;
+    background-color: #dadfea;
 }

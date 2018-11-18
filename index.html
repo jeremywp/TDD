@@ -13,27 +13,36 @@
 
     <div class="modal-background">
         <div class="modal-panel">
-            <label for="numberOfPlayers">Number of Players</label>
-            <input id="numberOfPlayers" type="number" placeholder="4, etc.">
-            <button class="numInput" onclick="addPlayers()">GO</button>
+            <div>
+                <label for="courseSelect">Choose your course: </label>
+                <select class="selector" id="courseSelect" onchange="loadCourse(this.value)">
+
+                </select>
+            </div>
+            <div>
+                <label for="teeselect">Choose your tee: </label>
+                <select class="selector" id="teeselect" onchange="chooseTee(this.value)">
+
+                </select>
+            </div>
+            <button class="build" onclick="buildCard()">GO!</button>
         </div>
     </div>
     <div class="content">
-        <div>
-            <select id="courseSelect" onchange="loadCourse(this.value)">
-
-            </select>
-            <select id="teeselect" onchange="chooseTee(this.value)">
-
-            </select>
-        </div>
-        <div class="card">
-            <div class="left"></div>
-            <div class="right"></div>
-        </div>
-        <div class="player">
-            <input class="pname" type="text" placeholder="Chandragupta">
-            <button>Add Player</button>
+        <div class="card-content">
+            <div class="card">
+                <div class="left"></div>
+                <div class="out"></div>
+                <div class="in"></div>
+                <div class="total"></div>
+            </div>
+            <div class="playeradd">
+                <input class="pname" type="text" placeholder="Player name">
+                <button class="addplayer" onclick="checkName()">Add Player</button>
+                <div class="perror-box">
+                    <span class="perror"></span>
+                </div>
+            </div>
         </div>
     </div>
 </body>
