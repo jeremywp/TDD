@@ -296,15 +296,63 @@ $(document).on("change", ".inscoreplayer4", function () {
 });
 
 $(document).on("change", "#p1h18", function () {
-    let totalscore = parseInt($("#total1").val());
-    let totalpar = parseInt($("#totalpar").val());
-    let totaldif = totalscore - totalpar;
+    let totalscore = $("#total1").text();
+    let totalpar = $("#totalpar").text();
+    let totaldif = totalscore.match(/\d+/g) - totalpar.match(/\d+/g);
 
-    if (totalscore > totalpar){
-        alert("You're score was \+" + totaldif + "over par.  Better luck next time!");
+    if (totaldif > 0){
+        alert("You're score was \+" + totaldif + " over par.  Better luck next time!");
     }
-    else if (totalscore < totalpar) {
-        alert("You're score was " + totaldif + "over par.  Great job!");
+    else if (totaldif < 0) {
+        alert("You're score was " + totaldif + " over par.  Great job!");
+    }
+    else {
+        alert("You score was on par.  Not bad!");
+    }
+});
+
+$(document).on("change", "#p2h18", function () {
+    let totalscore = $("#total1").text();
+    let totalpar = $("#totalpar").text();
+    let totaldif = totalscore.match(/\d+/g) - totalpar.match(/\d+/g);
+
+    if (totaldif > 0){
+        alert("You're score was \+" + totaldif + " over par.  Better luck next time!");
+    }
+    else if (totaldif < 0) {
+        alert("You're score was " + totaldif + " over par.  Great job!");
+    }
+    else {
+        alert("You score was on par.  Not bad!");
+    }
+});
+
+$(document).on("change", "#p3h18", function () {
+    let totalscore = $("#total1").text();
+    let totalpar = $("#totalpar").text();
+    let totaldif = totalscore.match(/\d+/g) - totalpar.match(/\d+/g);
+
+    if (totaldif > 0){
+        alert("You're score was \+" + totaldif + " over par.  Better luck next time!");
+    }
+    else if (totaldif < 0) {
+        alert("You're score was " + totaldif + " over par.  Great job!");
+    }
+    else {
+        alert("You score was on par.  Not bad!");
+    }
+});
+
+$(document).on("change", "#p4h18", function () {
+    let totalscore = $("#total1").text();
+    let totalpar = $("#totalpar").text();
+    let totaldif = totalscore.match(/\d+/g) - totalpar.match(/\d+/g);
+
+    if (totaldif > 0){
+        alert("You're score was \+" + totaldif + " over par.  Better luck next time!");
+    }
+    else if (totaldif < 0) {
+        alert("You're score was " + totaldif + " over par.  Great job!");
     }
     else {
         alert("You score was on par.  Not bad!");
